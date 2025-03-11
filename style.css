@@ -1,0 +1,258 @@
+/* Genel Stiller */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Stiller */
+.navbar-brand img {
+  transition: transform 0.3s;
+}
+
+.navbar-brand:hover img {
+  transform: scale(1.05);
+}
+
+/* Banner Stiller */
+.banner {
+  background-color: #f8f9fa;
+}
+
+/* Kategori Kartları */
+.category-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Ürün Kartları */
+.product-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.color-circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* Giriş ve Kayıt Sayfası */
+.auth-card {
+  max-width: 500px;
+  margin: 2rem auto;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.social-login-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+/* Ürün Detay Sayfası */
+.product-detail-image {
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-detail-info {
+  padding: 20px;
+}
+
+.rating {
+  color: #ffc107;
+}
+
+/* Siparişler Sayfası */
+.order-status {
+  width: 120px;
+}
+
+.status-confirmed {
+  background-color: #cff4fc;
+  color: #055160;
+}
+
+.status-shipped {
+  background-color: #fff3cd;
+  color: #664d03;
+}
+
+.status-delivered {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+/* Admin Paneli Stilleri */
+.admin-sidebar {
+  min-height: calc(100vh - 56px);
+  background-color: #343a40;
+}
+
+.admin-sidebar .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+  padding: 0.75rem 1rem;
+  border-radius: 0;
+}
+
+.admin-sidebar .nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.admin-sidebar .nav-link.active {
+  color: #fff;
+  background-color: #0d6efd;
+}
+
+.admin-content {
+  padding: 20px;
+}
+
+.stat-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* Kullanıcı Paneli Stilleri */
+.user-sidebar {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.balance-card {
+  background: linear-gradient(135deg, #0056b3 0%, #007bff 100%);
+  color: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 15px rgba(0, 123, 255, 0.2);
+}
+
+.balance-amount {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.quick-action-btn {
+  border-radius: 10px;
+  transition: all 0.3s;
+  height: 100%;
+}
+
+.quick-action-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Panel Card Stilleri */
+.panel-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+  margin-bottom: 20px;
+}
+
+.panel-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.panel-card .card-header {
+  border-radius: 10px 10px 0 0;
+  font-weight: 600;
+}: #0f5132;
+}
+
+/* Bakiye Sayfası */
+.balance-card {
+  background: linear-gradient(135deg, #4b6cb7, #182848);
+  color: white;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.balance-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.transaction-table th, .transaction-table td {
+  vertical-align: middle;
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 768px) {
+  .auth-card {
+    margin: 1rem auto;
+  }
+
+  .product-detail-image {
+    margin-bottom: 20px;
+  }
+
+  .order-table-container {
+    overflow-x: auto;
+  }
+
+  .balance-card {
+    padding: 20px;
+  }
+
+  .balance-amount {
+    font-size: 2rem;
+  }
+}
+
+/* Seller Prices Styles */
+#sellerPricesList .card {
+  transition: all 0.2s ease;
+}
+
+#sellerPricesList .card:hover {
+  background-color: #f8f9fa;
+  transform: translateX(5px);
+}
+
+#loadMoreSellers {
+  width: 100%;
+}
